@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services</title>
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: rgb(52, 72, 73);
+}
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ 
+  
+}
+.header h1 {
+  font-size: 2em;
+  margin: 0;
+  border-radius: 10%;
+}
+img {
+    padding: auto;
+    margin: 0%;
+}
+ul {
+    padding: 30px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-style: normal;
+}
+ul li {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 20px;
+}
+ul li a {
+    text-decoration: none;
+    color: #6e0c56; 
+}
+
+ul li a:hover {
+    color: #fff; 
+    background-color: #6e0c56; 
+    padding: 5px 10px; 
+    border-radius: 5px; 
+}
+.nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.nav li {
+  display: inline-block;
+  margin: 0 20px;
+}
+.nav a {
+  color: #fff;
+  text-decoration: none;
+}
+.nav a:hover {
+  color: #ddd;
+}
+.services{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.services :hover
+{
+  background-color: rgba(50, 80, 80, 0.27);
+}
+
+.web, .java, .sql {
+color: #ddd;
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+margin: 20px;
+background-color: #1f2727bf;
+border-radius: 50px;
+width: 400px;
+height: 450px;
+box-shadow: 0 0 30px rgb(97, 71, 97) ;
+
+}
+
+.web h2, .java h2, .sql h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+.web img, .java img, .sql img {
+  margin-top: 30px;
+  width: 200px; 
+  height: 200px; 
+  border-radius: 30%; 
+  margin-bottom: 20px;
+}
+.web p, .java p, .sql p {
+  margin-bottom: 10px;
+}
+.web button, .java button, .sql button {
+  background-color: #575353;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.hiddenblock {
+  display: none;
+  padding: 20px;
+  text-align: justify;
+  color: #fff;
+  background-color: #333;
+  border-radius: 10px;
+}
+.web button:hover, .java button:hover, .sql button:hover {
+  background-color: #6e0c56;
+}
+.cta {
+background-color: #f2f2f2;
+padding: 40px 0;
+text-align: center;
+}
+.cta h2 {
+font-size: 2em;
+margin-bottom: 20px;
+}
+.cta button {
+background-color: #333;
+color: #fff;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+.cta button:hover {
+background-color: #ddd;
+}
+@media (max-width: 768px) {
+.header,
+.nav,
+.web,
+.java,
+.sql,
+.cta {
+  flex-direction: column;
+  text-align: center;
+}
+.services
+{
+  flex-direction: column;
+
+}
+.web, .java, .sql {
+  margin: 20px auto;
+  padding: 20px; 
+}
+
+}
+</style>
+</head>
+<body>
+<div class="header">
+    <h1>Services</h1>
+    <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+    </ul>
+</div>
+
+<div class="services">
+    <div class="web">
+        <img src="web1.avif" alt="Web Development">
+        <h2>Web Development</h2>
+        <p>Creating website from ideas</p>
+        <button>Learn More</button>
+    </div>
+    <div class="java">
+        <img src="java.jpg" alt="Java Developer">
+        <h2>Java Developer</h2>
+        <p>Working for better user interaction</p>
+        <button>Learn More</button>
+    </div>
+    <div class="sql">
+        <img src="sql.jpg" alt="SQL Developer">
+        <h2>SQL Developer</h2>
+        <p id ="info">Working with Data to make it more secured</p>
+        <button onclick=myfunction()>Learn More</button>
+        <div id="hiddenblock" hidden>
+          SQL Developer for MySQL is a powerful tool designed for database development and management. 
+          It offers a user-friendly interface with features tailored for MySQL databases.
+          With SQL Developer, users can efficiently create, edit, and execute SQL queries, as well as manage database objects such as tables, views, indexes, and procedures. 
+          It supports advanced functionalities like data modeling, schema synchronization, and version control integration, aiding in collaborative development projects. 
+          SQL Developer also provides robust debugging capabilities, allowing developers to identify and resolve issues quickly. Additionally, it offers performance tuning tools for optimizing query execution and enhancing database efficiency. 
+          Its intuitive graphical interface makes it suitable for both beginners and experienced database professionals. 
+          SQL Developer for MySQL is a valuable addition to any portfolio, showcasing expertise in database management and development with MySQL.
+        </div>
+    </div>
+</div>
+<script>
+var flag = true;
+function myfunction()
+{
+  var x = document.getElementById("info");
+  if(flag){
+  x.innerHTML ="SQL Developer"
+  
+  document.getElementById("hiddenblock").hidden=false;
+}
+else{
+  x.innerHTML ="";
+  document.getElementById("hiddenblock").hidden=true;
+}
+}
+flag=iflag;
+</script>
+
+</body>
+</html>

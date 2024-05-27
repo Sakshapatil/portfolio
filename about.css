@@ -1,0 +1,168 @@
+.about-heading {
+    color: #6e0c56; 
+    font-size: 50px;
+    padding-left: 30px;
+}
+
+img {
+    height: 500px;
+    width: 400px;
+    border-radius: 30px; 
+    float: left; 
+    margin-right: 30px;
+    margin-left: 50px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);    
+}
+
+body {
+    background-color: #afc0c0; 
+    font-family: Arial, sans-serif; 
+}
+
+p.intro {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+}
+
+ul, ol {
+    padding: 30px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-style: normal;
+}
+
+ul li, ol li {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #6e0c56; 
+}
+
+ul li a:hover {
+    color: #fff; 
+    background-color: #6e0c56; 
+    padding: 5px 10px; 
+    border-radius: 5px; 
+}
+
+.skills-container {
+    background-color: rgba(113, 72, 118, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.skills-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+.skills-list li {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: rgb(113, 72, 118);
+    color: #fff;
+    border-radius: 20px;
+    font-size: 18px;
+}
+.exp-container
+{
+ background-color: #afc0c0;
+ border-radius: 10px;
+ padding: 20px;
+ margin-top: 20px;
+ margin-bottom: 20px;
+ background-color: rgba(86, 82, 87, 0.2);
+}
+.exp-list
+{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center; 
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: rgb(113, 72, 118);
+    color: #fff;
+    border-radius: 20px;
+    font-size: 18px;
+}
+.edu{
+    background-color: #afc0c0;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgba(86, 82, 87, 0.2);
+   
+
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #6e0c56; 
+    padding: 8px;
+    text-align: center;
+}
+
+tr:hover {
+    background-color: #377a7a; 
+}
+
+tr:nth-child(even) {
+    background-color:  rgb(159, 158, 158);
+}
+
+tr:nth-child(odd) {
+    background-color:rgb(162, 135, 162); 
+}
+.strength{
+    background-color: #afc0c0;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgba(86, 82, 87, 0.2);
+    
+
+}
+.strength-list li{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center; 
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: rgb(113, 72, 118);
+    color: #fff;
+    border-radius: 20px;
+    font-size: 18px;
+
+}
+
+.extra{
+    background-color: #afc0c0;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgba(86, 82, 87, 0.2);
+   
+}
